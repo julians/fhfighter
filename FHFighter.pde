@@ -44,7 +44,7 @@ void draw(){
       bullets.remove(i);
       continue;
     }
-    bullet.draw(); 
+    bullet.draw();
 
     for (int j=0;j<enemies.size(); j++){
       if (((Enemy) enemies.get(j)).blah.intersects(bullet.hitbox)){
@@ -61,16 +61,16 @@ void draw(){
   }
 }
 
-void keyPressed() 
-{ 
+void keyPressed()
+{
   sf.keyPressed();
 
-} 
+}
 
-void keyReleased() 
-{ 
+void keyReleased()
+{
   sf.keyReleased();
-} 
+}
 
 
 

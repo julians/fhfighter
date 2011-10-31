@@ -7,7 +7,7 @@ class Enemy{
     this.hitpoints=_hp;
     this.blah = new Rectangle(_x, _y, 10, 10);
     this.dir = 1;
-    
+
   }
   void move(){
 
@@ -18,11 +18,11 @@ class Enemy{
     }
     this.blah.setLocation((int) this.blah.getX() + 3*this.dir, (int) this.blah.getY());
 
-  
+
   }
-  
+
   void draw(){
-    
+
     this.move();
     //ellipse(this.x, this.y, this.enemyHeight, this.enemyWidth);
     rect((float) this.blah.getX(), (float) this.blah.getY(), (float) this.blah.getWidth(), (float) this.blah.getHeight());
