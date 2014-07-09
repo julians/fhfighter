@@ -12,7 +12,7 @@ class Bullet{
 
   void move(){
     this.hitbox.setLocation((int) (this.hitbox.getX() + this.speedX), (int) (this.hitbox.getY() + this.speedY));
-    
+
   }
 
   void draw() {
